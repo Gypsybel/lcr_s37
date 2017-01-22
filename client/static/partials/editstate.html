@@ -1,0 +1,13 @@
+
+<div ng-controller='editStateController'>
+  <div class="row">
+    <div class="col s12">
+      <h2>Update capital for {{state.state}}</h2>
+      <form>
+        <label>Capital:<input type="text" ng-model="state.capital" ></label>
+        <button class="btn" ng-click='updateState(state)'><a class="white-text" href="#/statescapitals">Update</a></button>
+        <button class="btn"><a class="white-text" href="#/statescapitals">Cancel</a></button>
+      </form>
+    </div>
+  </div>
+</div>

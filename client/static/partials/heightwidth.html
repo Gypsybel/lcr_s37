@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col s12 m12 l12 center-align">
+    <h1>Height and Width</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col s12 m12 l12 center-align">
+    <h5>Resize the window to view the current height and width</h5>
+    <h3>Height: <span id="height"></span></h3>
+    <h3>Width: <span id="width"></span></h3>
+  </div>
+</div>
+<script>
+  window.addEventListener("resize", getSize);
+    function getSize() {
+      var w = window.innerWidth;
+      var h = window.innerHeight;
+      document.getElementById("height").innerHTML = h;
+      document.getElementById("width").innerHTML = w;
+    };
+</script>
